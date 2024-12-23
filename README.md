@@ -1,35 +1,26 @@
-# QAM Simulator 1.0
-> QAM Simulator 1.0 is a Python-based tool for visualizing Quadrature Amplitude Modulation (QAM) constellation diagrams with advanced features like noise addition, SNR and BNR calculations, and symbol phase analysis. It generates visualizations and data tables for various QAM sizes, making it ideal for telecommunications research, education, and signal analysis.
+# ASK, FSK, PSK Modulation and Demodulation in LabVIEW
+> This project demonstrates the implementation of ASK (Amplitude Shift Keying), FSK (Frequency Shift Keying), and PSK (Phase Shift Keying) modulation and demodulation in LabVIEW. It includes both 1 bit per symbol and 2 bits per symbol configurations to showcase different encoding schemes. The provided files allow users to explore digital signal transmission, waveform visualization and more...
 
 ![](32-QAM(AmplitudeNoise).png)
 
 ## Features
 
-- Flexible QAM Size Support: Generate constellations for QAM sizes ranging from 4 to 4096.
-- Noise Simulation: Add amplitude or phase noise with customizable intensity.
-- Performance Metrics: Calculate and evaluate Signal-to-Noise Ratio (SNR) and Bit-to-Noise Ratio (BNR).
-- Visual & Tabular Outputs:
-   + Constellation diagrams annotated with symbol indices and optional noise/exclusion points.
-   + Symbol energy and phase data exported as organized tables.
-- Automated Export: Save results as PDF files directly to your desktop for easy access.
+- Adjustable parameters for carrier frequency, amplitude, and phase.
+- Real-time visualization of modulated signals and demodulated waveforms.
+- Adapation for 1,2 and 3 bits per symbol.
 
-## Technologies Used
+## Simulation Software
 
-- NumPy: Efficient numerical operations.
-- Matplotlib: High-quality data visualization.
-- OS Module: Desktop file handling.
+- NI LabVIEW
 
 ## How to Use
 
-1. Run the Script: Input a valid QAM size (e.g., 16, 64, 256).
-2. Choose Noise Options:
-        - Decide whether to add noise.
-        - Specify the noise type (amplitude/phase) and intensity.
-3. View Outputs:
-        - Constellation diagram PDF.
-        - Symbol table PDF.
-4. Evaluate Metrics:
-        - Review SNR and BNR values in the terminal output.
+1. Open the LabVIEW project.
+2. Choose the modulation scheme (ASK, FSK, or PSK) and bits-per-symbol (1 or 2) from the files.
+3. Adjust simulation parameters like amplitude, frequency, and phase.
+4. Run the VI to observe:
+        - Modulated signal waveforms.
+        - Demodulated binary sequence.
 
 
 ## Meta
